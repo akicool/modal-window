@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modal Window</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<button class="button">Click me</button>	
+		<div class="modal active">
+			<div class="modal__window">
+				<button class="modal__close"><img src="img-material/Vector.svg" alt=""></button>
+				<h1 class="modal__logo-text">Economy</h1>
+				<p class="modal__logo-subtext">VW Golf, Ford Focus, Opel Astra, Audi A3, BMW 3 и т.п.</p>
+				<img src="img-material/car.svg" alt="">
+				<div class="model__user-info">
+					<span class="modal__user-stick"></span>
+					<p class="model__user-text">Экономичный вариант для компании до 3-4 человек.</p>
+					<div class="modal__user-subinfo">
+						<div class="modal__user-passenger">
+							<img src="img-material/user.svg" alt="">
+							<p class="modal__user-passenger-text">2 пассажира</p>
+						</div>
+						<div class="modal__luggage-spaces">
+							<img src="img-material/luggage.svg" alt="">
+							<p class="modal__luggage-spaces-text">3 багажных места</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal__interactive-block">
+					<div class="modal__time-block">
+						<div class="modal__interactive-time">
+							<p class="modal__interactive-time-text">Время</p>
+							<input class="modal__time-select" type="time">
+						</div>
+						<div class="modal__time-text">
+							<img src="img-material/def.svg" alt="">
+							<p class="modal__time-subtext">Бесплатное изменение или отмена поездки за 24 часа до начала</p>
+						</div>
+					</div>
+					<div class="modal__write-block">
+						<h1 class="modal__write-text">Примечания к поездке</h1>
+						<div class="modal__write-note">
+							<p class="modal__write-note-text">Примечания к поездке</p>
+							<input class="modal__write-note-input" type="text">
+						</div>
+						<button class="modal__button-footer">
+							<p class="modal__button-footer-text">Добавить в корзину</p>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal__overlay">
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
