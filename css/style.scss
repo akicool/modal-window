@@ -32,7 +32,8 @@ body {
 // modal style setting
 
 .button {
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,14 +55,15 @@ body {
 
 
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    display: none;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // height: 100%;
+    // width: 100%;
 
     .modal__window {
         display: flex;
@@ -90,19 +92,29 @@ body {
     .modal__close:hover {
         opacity: 1;
         transition: all 0.3s;
+        cursor: pointer;
     }
 }
 
-.modal.active .modal__window {
-    display: none;
-}
+// .modal.active .modal__window {
+//     // display: none;
+// }
 
-.modal.active .modal__overlay {
-    display: none
-}
+// .modal.active .modal__overlay {
+//     // display: none
+// }
 
 .modal.active {
-    display: none;
+    // display: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -199,7 +211,7 @@ input[type="time"] {
     border: none;
 }
 
-input[type="text"] {
+input[type="textarea"] {
     border: none;
 }
 
@@ -228,6 +240,7 @@ input {
             .modal__time-select {
                 margin-bottom: 7px;
                 margin-left: 8px;
+                cursor: pointer;
             }
         }
 
@@ -289,6 +302,7 @@ input {
             width: 256px;
             margin-top: 24px;
             transition: all .2s;
+            cursor: pointer;
             .modal__button-footer-text {
                 text-transform: uppercase;
                 color: $save-button-color;
